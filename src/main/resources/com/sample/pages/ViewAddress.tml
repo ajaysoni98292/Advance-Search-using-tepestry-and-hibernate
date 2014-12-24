@@ -1,0 +1,22 @@
+<html t:type="layout" title="About two"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+
+<div class="buttonDiv">
+<t:pagelink page="createAddress" class="linkButton" >Create Address</t:pagelink>
+<t:pagelink page="index" class="linkButton">Home</t:pagelink>
+</div>
+
+<form t:type="form" t:id="searchForm">
+<div>
+    <label t:type="label" for="searchBox">firstName</label>
+    <input t:type="TextField" t:id="searchBox" placeholder="Enter for search"></input>
+</div>
+<div>
+    <input type="submit" value="submit"></input>
+</div>
+</form>
+
+<t:grid source="addresses"
+        include="id,firstName,lastName,emailId,phoneNumber,city,state,zip" rowsPerPage="5"/>
+</html>

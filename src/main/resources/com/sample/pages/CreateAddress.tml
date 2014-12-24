@@ -1,0 +1,54 @@
+<html t:type="layout" title="Contact com.assignment"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+
+<div class="buttonDiv">
+    <t:pagelink page="viewAddress" class="linkButton">View Address</t:pagelink>
+    <t:pagelink page="index" class="linkButton">Home</t:pagelink>
+</div>
+<div>
+    <form t:type="form" t:id="createAddressForm">
+        <table style="border: none">
+            <tr>
+                <td><label t:type="label" for="firstName">firstName</label></td>
+                <td><input t:type="TextField" t:id="firstName" placeholder="Enter firstName"
+                           class="inputFields"></input></td>
+            </tr>
+            <tr>
+                <td><label t:type="label" for="lastName">lastName</label></td>
+                <td><input t:type="TextField" t:id="lastName" placeholder="Enter lastName" class="inputFields"></input>
+                </td>
+            </tr>
+            <tr>
+                <td><label t:type="label" for="emailId">Email Id</label></td>
+                <td><input t:type="TextField" t:id="emailId" placeholder="Enter emailId" class="inputFields"></input>
+                </td>
+            </tr>
+            <tr>
+                <td><label t:type="label" for="phoneNumber">Phone Number</label></td>
+                <td><input t:type="TextField" t:id="phoneNumber" placeholder="Enter Phone Number"
+                           class="inputFields"></input></td>
+            </tr>
+            <tr>
+                <td><label t:type="label" for="zip">Zip</label></td>
+                <td><input t:type="TextField" t:id="zip" placeholder="Enter Zip" class="inputFields"></input></td>
+            </tr>
+            <tr>
+                <td><label t:type="label" for="city">City</label></td>
+                <td><input t:type="TextField" t:id="city" placeholder="Enter city Name" class="inputFields"></input>
+                </td>
+            </tr>
+            <tr>
+                <td><label t:type="label" for="state">State</label></td>
+                <td><input t:type="TextField" t:id="state" placeholder="Enter state Name" class="inputFields"></input>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="submit"></input></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</html>
